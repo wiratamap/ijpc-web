@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PaginationComponent #render should render pagination component with defined props 1`] = `
+<nav
+  aria-label="Pagination"
+>
+  <ul
+    className="pagination pagination-lg justify-content-end"
+  >
+    <li
+      className="page-item"
+    >
+      <button
+        aria-label="Previous"
+        className="page-link"
+        disabled={true}
+        onClick={[MockFunction]}
+        type="button"
+      >
+        <span
+          aria-hidden="true"
+        >
+          «
+        </span>
+      </button>
+    </li>
+    <li
+      className="page-item"
+    >
+      <button
+        aria-label="Next"
+        className="page-link"
+        disabled={true}
+        onClick={[MockFunction]}
+        type="button"
+      >
+        <span
+          aria-hidden="true"
+        >
+          »
+        </span>
+      </button>
+    </li>
+  </ul>
+</nav>
+`;

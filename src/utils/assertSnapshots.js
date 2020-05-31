@@ -8,10 +8,12 @@ import renderer from 'react-test-renderer';
 const assertSnapshot = (Component, testConfiguration) => {
   const { props, description } = testConfiguration;
 
-  it(description, () => {
-    const component = renderer.create(<Component {...props} />).toJSON();
+  describe('#render', () => {
+    it(description, () => {
+      const component = renderer.create(<Component {...props} />).toJSON();
 
-    expect(component).toMatchSnapshot();
+      expect(component).toMatchSnapshot();
+    });
   });
 };
 

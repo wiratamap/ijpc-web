@@ -1,9 +1,14 @@
-import React from 'react';
-import { render } from '@testing-library/react';
 import App from './App';
+import assertSnapshots from './utils/assertSnapshots';
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+jest.mock('./Containers/Vacancy/VacancyContainer', () => 'VacancyContainer');
+
+describe('App', () => {
+  const configurations = [
+    {
+      description: 'should render vacancy list component with pagination component'
+    }
+  ];
+
+  assertSnapshots(App, configurations);
 });
