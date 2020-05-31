@@ -2,6 +2,7 @@ image: node:latest
 
 stages:
     - install
+    - lint
     - test
     - build
 
@@ -13,11 +14,17 @@ install:
     stage: install
     script:
         - npm install
+        
+lint:
+    stage: lint
+    script:
+        - npm run lint
     
 test:
     stage: test
     script:
         - npm run test
+    coverage: All files[^|]*\|[^|]*\s+([\d\.]+)
 
 build:
     stage: build
