@@ -19,11 +19,11 @@ lint:
     stage: lint
     script:
         - npm run lint
-    
+
 test:
     stage: test
     script:
-        - npm run test
+        - npm run test:nonInteractive
     coverage: /All files[^|]*\|[^|]*\s+([\d\.]+)/
 
 build:

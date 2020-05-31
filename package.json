@@ -9,17 +9,24 @@
     "axios": "^0.19.2",
     "bootstrap": "^4.5.0",
     "lodash": "^4.17.15",
+    "moment": "^2.26.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
-    "recompose": "^0.30.0"
+    "recompose": "^0.30.0",
+    "redux": "^4.0.5",
+    "redux-actions": "^2.6.5",
+    "type-to-reducer": "^1.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --coverage",
+    "test": "react-scripts test --coverage --watchAll",
+    "test:nonInteractive": "CI=true react-scripts test --coverage --watchAll=false",
+    "test:updateSnapshot": "react-scripts test --update-snapshot",
     "eject": "react-scripts eject",
     "lint": "eslint --ext .js --ext .jsx ."
   },
@@ -47,6 +54,15 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^2.5.1",
-    "react-test-renderer": "^16.13.1"
+    "flush-promises": "^1.0.2",
+    "react-test-renderer": "^16.13.1",
+    "redux-devtools": "^3.5.0"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/**/index.js",
+      "!src/serviceWorker.js"
+    ]
   }
 }
