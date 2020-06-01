@@ -3,8 +3,12 @@ import assertSnapshots from '../../utils/assertSnapshots';
 import VacancyComponent from './VacancyComponent';
 
 jest.mock('../../utils/numberFormat', () => ({
-  currencyFormat: () => 'IDR 0.00'
-}));
+  currencyFormat: jest.fn().mockImplementation(() => 'IDR 0.00')
+}))
+  .mock('moment', () => () => ({
+    fromNow: jest.fn().mockImplementation(() => '1 days ago'),
+    format: jest.fn().mockImplementation(() => '1 Jan')
+  }));
 
 describe('VacancyComponent', () => {
   const configurations = [

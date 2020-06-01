@@ -62,11 +62,11 @@ exports[`VacancyComponent #render should render VacancyComponent with defined po
             >
               Posted
                
-              2 days ago
+              1 days ago
                
               · Apply before
                
-              14 May
+              1 Jan
               .
             </p>
           </div>
@@ -149,11 +149,11 @@ exports[`VacancyComponent #render should render VacancyComponent with proper def
             >
               Posted
                
-              2 days ago
+              1 days ago
                
               · Apply before
                
-              14 May
+              1 Jan
               .
             </p>
           </div>
