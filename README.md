@@ -1,3 +1,5 @@
+![Test & Code Quality](https://github.com/wiratamap/ijpc-web/workflows/Test%20&%20Code%20Quality/badge.svg?branch=master)
+
 ### IJPC Web (Revamped) [Front End]
 
 This is a reworked and revamped project from Software Engineering Course in my college. 
